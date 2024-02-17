@@ -2,7 +2,7 @@
 /// <reference path="types-dnscontrol.d.ts" />
 
 var REG_NONE = NewRegistrar("none");    // No registrar.
-var DNS_BIND = NewDnsProvider("bind");  // ISC BIND.
+var DNS_CLOUDFLARE = NewDnsProvider("cloudflare");  // ISC BIND.
 
 // Domains:
 
@@ -10,7 +10,7 @@ DEFAULTS(
     DefaultTTL("1m")
 );
 
-D("actlab.org", REG_NONE, DnsProvider(DNS_BIND),
+D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     A("@", "160.251.151.230"),
     A("autoconfig", "160.251.151.230"),
     A("www", "160.251.151.230"),
