@@ -2,7 +2,7 @@
 /// <reference path="types-dnscontrol.d.ts" />
 
 var REG_NONE = NewRegistrar("none");    // No registrar.
-var DNS_CLOUDFLARE = NewDnsProvider("cloudflare");  // ISC BIND.
+var DNS_CLOUDFLARE = NewDnsProvider("cloudflare");  // cloudflare DNS
 
 // Domains:
 
