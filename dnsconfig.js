@@ -2,7 +2,7 @@
 /// <reference path="types-dnscontrol.d.ts" />
 
 var REG_NONE = NewRegistrar("none");    // No registrar.
-var DNS_CLOUDFLARE = NewDnsProvider("cloudflare");  // ISC BIND.
+var DNS_CLOUDFLARE = NewDnsProvider("cloudflare");  // cloudflare DNS
 
 // Domains:
 
@@ -24,6 +24,7 @@ D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     MX("sendgrid", 10, "mx.sendgrid.net."),
     MX("mail", 1, "aspmx.l.google.com."),
     MX("mail", 5, "ALT1.ASPMX.L.GOOGLE.COM."),
+    MX("mail", 5, "ALT2.ASPMX.L.GOOGLE.COM."),
     MX("mail", 10, "ALT3.ASPMX.L.GOOGLE.COM."),
     MX("mail", 10, "ALT4.ASPMX.L.GOOGLE.COM."),
     TXT("@", "v=spf1 ip4:160.251.151.230 ip4:160.251.151.157 ~all"),
