@@ -14,16 +14,25 @@ D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     A("@", "160.251.151.230"),
     A("autoconfig", "160.251.151.230"),
     A("www", "160.251.151.230"),
+
     A("lamp", "160.16.58.123"),
     A("www.lamp", "160.16.58.123"),
+
     A("stg", "160.251.151.157"),
     A("www.stg", "160.251.151.157"),
+
     A("stg2", "85.131.192.5"),
     A("www.stg2", "85.131.192.5"),
     NS("_acme-challenge.stg2", "ns1.cloudfree.ne.jp."),
     NS("_acme-challenge.stg2", "ns2.cloudfree.ne.jp."),
     NS("_acme-challenge.www.stg2", "ns1.cloudfree.ne.jp."),
     NS("_acme-challenge.www.stg2", "ns2.cloudfree.ne.jp."),
+
+    A("stg3", "113.36.242.231"),
+    A("www.stg3", "113.36.242.231"),
+    NS("_acme-challenge.stg3", "ns1.lsv.jp."),
+    NS("_acme-challenge.stg3", "ns2.lsv.jp."),
+
     MX("lamp", 5, "salmoncoyote7.sakura.ne.jp."),
     MX("www.lamp", 5, "salmoncoyote7.sakura.ne.jp."),
     MX("@", 10, "@"),
@@ -33,6 +42,7 @@ D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     MX("mail", 5, "ALT2.ASPMX.L.GOOGLE.COM."),
     MX("mail", 10, "ALT3.ASPMX.L.GOOGLE.COM."),
     MX("mail", 10, "ALT4.ASPMX.L.GOOGLE.COM."),
+
     TXT("@", "v=spf1 ip4:160.251.151.230 ip4:160.251.151.157 ~all"),
     TXT("@", "10de176aa2"),
     TXT("*", "10de176aa2"),
