@@ -14,6 +14,8 @@ D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     A("@", "160.251.151.230"),
     A("autoconfig", "160.251.151.230"),
     A("www", "160.251.151.230"),
+	TXT("_acme-challenge", "vdyI3egeYp_4xplZ1DBXKVk0XMH_aG6ycbxuREuvAjY"),
+	TXT("_acme-challenge.www", "I5W9BuLmAUoYyovdarNYEM3QRCvNmqp-6y7cS9ktZLs"),
 
     A("lamp", "160.16.58.123"),
     A("www.lamp", "160.16.58.123"),
