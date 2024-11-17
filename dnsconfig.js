@@ -21,13 +21,6 @@ D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     A("stg", "160.251.151.157"),
     A("www.stg", "160.251.151.157"),
 
-    A("stg2", "85.131.192.5"),
-    A("www.stg2", "85.131.192.5"),
-    NS("_acme-challenge.stg2", "ns1.cloudfree.ne.jp."),
-    NS("_acme-challenge.stg2", "ns2.cloudfree.ne.jp."),
-    NS("_acme-challenge.www.stg2", "ns1.cloudfree.ne.jp."),
-    NS("_acme-challenge.www.stg2", "ns2.cloudfree.ne.jp."),
-
     A("stg3", "113.36.242.231"),
     A("www.stg3", "113.36.242.231"),
     NS("_acme-challenge.stg3", "ns1.lsv.jp."),
