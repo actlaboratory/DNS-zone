@@ -49,5 +49,11 @@ D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     TXT("sendgrid", "v=spf1 include:sendgrid.net ~all"),
     TXT("sg._domainkey", "k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnjex8a/J19j4cP79OIrB7FccRAjdU4F32o3uGprX4ukE/gLkUZlFAXPqnC0cOcrWhjjem3wDpej/Co9TT99FKANthTO3Jn/NCwqd7c3TS+UsHR4atTFrQagdU4/09DceoOZ2Fx0ygHdVJdCd6vaIlXoSL/nHcR+WBAbaMkqiDawIDAQAB"),
     CNAME("click", "sendgrid.net."),
-    CNAME("37371635", "sendgrid.net.")
+    CNAME("37371635", "sendgrid.net."),
+
+    CNAME("mt65", "smtp.mailtrap.live."),
+    CNAME("rwmt1._domainkey", "rwmt1.dkim.smtp.mailtrap.live."),
+    CNAME("rwmt2._domainkey", "rwmt2.dkim.smtp.mailtrap.live."),
+    TXT("_dmarc", "v=DMARC1; p=none; rua=mailto:dmarc@smtp-staging.mailtrap.net; ruf=mailto:dmarc@smtp-staging.mailtrap.net; rf=afrf; pct=100"),
+	CNAME("mt-link", "t.mailtrap.live.")
 );
