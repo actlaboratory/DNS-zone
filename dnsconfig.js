@@ -54,6 +54,12 @@ D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     CNAME("mt65", "smtp.mailtrap.live."),
     CNAME("rwmt1._domainkey", "rwmt1.dkim.smtp.mailtrap.live."),
     CNAME("rwmt2._domainkey", "rwmt2.dkim.smtp.mailtrap.live."),
-    TXT("_dmarc", "v=DMARC1; p=none; rua=mailto:dmarc@smtp-staging.mailtrap.net; ruf=mailto:dmarc@smtp-staging.mailtrap.net; rf=afrf; pct=100"),
-	CNAME("mt-link", "t.mailtrap.live.")
+    TXT("_dmarc", "v=DMARC1; p=none; rua=mailto:235307dd801045efa1e7e714152d1263@dmarc-reports.cloudflare.net,mailto:dmarc@smtp-staging.mailtrap.net; ruf=mailto:dmarc@smtp-staging.mailtrap.net; rf=afrf; pct=100"),
+	CNAME("mt-link", "t.mailtrap.live."),
+
+    // cf.actlab.org - Cloudflare Email Routing
+    MX("cf", 28, "route1.mx.cloudflare.net."),
+    MX("cf", 76, "route2.mx.cloudflare.net."),
+    MX("cf", 84, "route3.mx.cloudflare.net."),
+    TXT("cf", "v=spf1 include:_spf.mx.cloudflare.net ~all")
 );
