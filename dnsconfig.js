@@ -60,5 +60,8 @@ D("actlab.org", REG_NONE, DnsProvider(DNS_CLOUDFLARE),
     // forward.actlab.org - Forward Email
     MX("forward", 10, "mx1.forwardemail.net."),
     MX("forward", 10, "mx2.forwardemail.net."),
-    TXT("forward", "forward-email=QXVQT3RxVmVHcHpvbGdjWUxEU1RRWWF2cWlTY1NEbk1MNEQ0MDlWb3Z5TlNVOGZGSXBlV1VKemlkaVowNWxjU1VR")
+    TXT("forward", "forward-email=QXVQT3RxVmVHcHpvbGdjWUxEU1RRWWF2cWlTY1NEbk1MNEQ0MDlWb3Z5TlNVOGZGSXBlV1VKemlkaVowNWxjU1VR"),
+    // forward-emailからslackへの転送
+    TXT("forward", "forward-email=QWtqR3g1SDJEa2t3ckExYjkyd3U0dkpJeV8tYVA3aXNvSXdCWnFUYVpZQUdkXzNXR1daeXN6VXl5NXFHSUhuTGkwSTRscHhCNkx1VDRfZ1p6R3pGOVF3R01UZWhxM3BWMWRkVWpBWXo5MXk3b1hxa2JWOHZrMzhMZURObU92YkZZaWJYbXF5MkZodzlIOEdhYVYyTW56NVM5R2lE"),
+    TXT("forward", "forward-email=QWtKTXJYUklHWF9wSnlwdWhzQVUxSjZwOXVQb0NDTjFuRkZ6Qy1jV2VVUjNuQnJlY2ZYTS1fbkJPcHVKQTJSVzBNUDZJbkw0UUZjdjhRYlZXZmd0NlcwTlVTeWpNcER3WEZJZWVlTGdHdFBHVmZNenlqbGg5SlRCYl9BbmxuSGtqdEJFb3NoVGY2djhKMTB3ZVdIR3VOdFZ6eUNaMS1jaA==")
 );
